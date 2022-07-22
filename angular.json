@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "0dde2e9d-5e06-4546-a297-fa118a1edb1d"
+    "analytics": "43023d37-9ff9-4014-ad3f-db2160371880"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-angular": {
+    "brazil-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/project-angular",
+            "outputPath": "dist/brazil-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "project-angular:build:production"
+              "browserTarget": "brazil-angular:build:production"
             },
             "development": {
-              "browserTarget": "project-angular:build:development"
+              "browserTarget": "brazil-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project-angular:build"
+            "browserTarget": "brazil-angular:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "project-angular"
+  "defaultProject": "brazil-angular"
 }

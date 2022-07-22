@@ -1,0 +1,32 @@
+
+<ng-container *ngIf="adresses.length > 0">
+    <!-- <input type="text" #ville (input)="onInput(ville.value)"><br><br>
+     -->
+     <span>{{ text }}</span><br>
+    <input type="text" [(ngModel)] ="text">
+    <div class="container mt-5"></div>
+    <table  class="table">
+        <tr>
+            <th scope="col">VILLE</th>
+            <th scope="col">QUARTIER</th>
+            <th scope="col">NUMERO VILLA</th>
+            <th scope="col">ACTION</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let adresse of adresses">
+                <td>{{ adresse.ville }}</td>
+                <td>{{ adresse.quartier }}</td>
+                <td [innerText]="adresse.villa"></td>
+                <td>
+                        <button class="btn btn-primary">detail</button>
+                </td>
+                </tr>
+        </tbody>
+   
+    </table>
+</ng-container>
+
+<ng-container *ngIf="adresses.length == 0">
+    il n ya pas de donnees 
+</ng-container>
+

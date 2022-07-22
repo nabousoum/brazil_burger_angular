@@ -1,0 +1,24 @@
+
+    <div class="container mt-5"></div>
+    <table  class="table">
+        <tr>
+            <th scope="col">VILLE</th>
+            <th scope="col">QUARTIER</th>
+            <th scope="col">NUMERO VILLA</th>
+            <th scope="col">ACTION</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let adresse of obsArray$|async">
+                <td>{{ adresse.ville }}</td>
+                <td>{{ adresse.quartier }}</td>
+                <td [innerText]="adresse.villa"></td>
+                <td>
+                        <button class="btn btn-primary">detail</button>
+                </td>
+                </tr>
+        </tbody>
+   
+    </table>
+
+
+
